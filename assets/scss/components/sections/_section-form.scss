@@ -1,0 +1,19 @@
+.form {
+  background-color: $color-primary;
+  padding: 30px;
+
+  &__container {
+    display: flex;
+  }
+
+  &-item {
+    display: block;
+
+    &__input {
+      width: 100%;
+      height: 60px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
