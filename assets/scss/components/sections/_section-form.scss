@@ -49,5 +49,12 @@
     height: 60px;
     border-color: rgba(255, 255, 255, 0);
     border-bottom-color: rgba(255, 255, 255, 0.2);
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
+      border: 2px white solid;
+      transition: 0.5s;
+    }
   }
 }

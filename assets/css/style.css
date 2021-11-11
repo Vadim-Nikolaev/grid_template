@@ -820,6 +820,13 @@ a {
   border-color: rgba(255, 255, 255, 0);
   border-bottom-color: rgba(255, 255, 255, 0.2);
 }
+.form .btn--primary:hover, .form .btn--primary:focus {
+  background-color: #d66926;
+  border: 2px white solid;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
 @media (min-width: 576px) {
   .btn--primary {
     width: 350px;
