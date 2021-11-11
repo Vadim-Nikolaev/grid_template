@@ -712,6 +712,16 @@ a {
   color: #637588;
   height: 491px;
 }
+.about__content p:first-of-type::after {
+  right: -50px;
+  position: relative;
+  top: 0;
+  width: 2px;
+  height: 200px;
+  content: "";
+  border: 1px solid #707070;
+  background-color: #637588;
+}
 .about__title {
   margin-top: 0;
   font-size: 2.5rem;
@@ -747,6 +757,7 @@ a {
   display: grid;
   max-width: 1340px;
   margin: auto;
+  padding: 0 20px;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -761,6 +772,53 @@ a {
   background-color: #38405a;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.15em;
+  font-size: 1.125rem;
+}
+.form-item__input:hover, .form-item__input:focus {
+  outline: 0;
+  border-color: rgba(255, 255, 255, 0.15);
+  border-bottom-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  caret-color: white;
+}
+.form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder {
+  color: #8c9bab;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.form-item__input:hover::-moz-placeholder, .form-item__input:focus::-moz-placeholder {
+  color: #8c9bab;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+.form-item__input:hover:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder {
+  color: #8c9bab;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+}
+.form-item__input:hover::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder {
+  color: #8c9bab;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+}
+.form-item__input:hover::placeholder, .form-item__input:focus::placeholder {
+  color: #8c9bab;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.form .btn--primary {
+  width: 100%;
+  background-color: #424a63;
+  height: 60px;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 576px) {
   .btn--primary {
