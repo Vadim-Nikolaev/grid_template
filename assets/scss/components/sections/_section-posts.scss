@@ -29,6 +29,10 @@
   }
 
   &-item__link {
+    display: grid;
+    overflow: hidden;
+    height: 100%;
+    grid-template-rows: 300px 1fr;
   }
 
   &-item__image {
@@ -45,6 +49,7 @@
     display: grid;
     align-content: center;
     padding: $gap;
+
     & h3 {
       font-family: $font-header;
       letter-spacing: 0.05em;
@@ -58,7 +63,7 @@
       font-family: $font-main;
       text-align: center;
       color: $color-gray;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.0001em;
       transition: color 0.5s;
       line-height: 1.15;
     }

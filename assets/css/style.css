@@ -855,6 +855,12 @@ a {
   padding-bottom: 20px;
   gap: 20px;
 }
+.posts-item__link {
+  display: grid;
+  overflow: hidden;
+  height: 100%;
+  grid-template-rows: 300px 1fr;
+}
 .posts-item__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -889,7 +895,7 @@ a {
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #637588;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.0001em;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
