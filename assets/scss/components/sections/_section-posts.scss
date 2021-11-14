@@ -114,4 +114,9 @@
       grid-area: p6;
     }
   }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+  }
 }
