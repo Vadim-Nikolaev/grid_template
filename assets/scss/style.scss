@@ -26,14 +26,14 @@
 
 @import "../../libs/normalize.css/normalize.scss";
 
-@import "presets/variables";
 @import "presets/skin";
 @import "presets/index";
+@import "presets/variables";
 
 @import "mixins/extends";
 @import "mixins/mixins";
 @import "mixins/mixins-media";
-@import "mixins/index";
+// @import "mixins/index";
 
 @import "common/typography";
 @import "common/classes";
