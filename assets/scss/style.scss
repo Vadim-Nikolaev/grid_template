@@ -1,7 +1,7 @@
 // @use "../../libs/normalize.css/normalize";
 
 // @use "presets/skin";
-// @use "presets/variables";
+// @use "presets/variables" as *;
 
 // @use "mixins/mixins";
 // @use "mixins/mixins-media";
@@ -28,10 +28,13 @@
 
 @import "presets/variables";
 @import "presets/skin";
+@import "presets/index";
 
 @import "mixins/extends";
 @import "mixins/mixins";
 @import "mixins/mixins-media";
+@import "mixins/index";
+
 @import "common/typography";
 @import "common/classes";
 
@@ -47,5 +50,4 @@
 @import "components/sections/section-about";
 @import "components/sections/section-form";
 @import "components/sections/section-posts";
-
 @import "components/footer/footer";
