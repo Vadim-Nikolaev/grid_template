@@ -120,10 +120,12 @@
       position: absolute;
       top: 100%;
       right: $gap;
-      width: 145px;
-      text-align: end;
 
       display: none;
+
+      width: 145px;
+
+      text-align: end;
 
       background-color: rgb(68, 89, 110, 0.9);
 
@@ -140,13 +142,15 @@
 
   &__link {
     display: block;
+
     transition: color 0.5s;
+
     font-size: 1.125rem;
 
     @include md-min {
+      margin-left: 20px;
       padding: $gap $gap-sm;
     }
-
     @include md {
       padding: $gap-sm $gap;
     }

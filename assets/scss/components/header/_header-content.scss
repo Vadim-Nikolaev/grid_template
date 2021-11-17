@@ -23,22 +23,22 @@
   &__actions {
     display: flex;
     justify-content: center;
-    gap: $gap;
+
     padding-top: 0;
+
+    gap: $gap;
+    @include sm {
+      align-items: center;
+      flex-direction: column;
+    }
 
     & a {
       @include md-sm {
         letter-spacing: 0.05em;
       }
-
       @include sm {
         letter-spacing: 0.05em;
       }
-    }
-
-    @include sm {
-      align-items: center;
-      flex-direction: column;
     }
   }
 }

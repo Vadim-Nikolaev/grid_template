@@ -11,29 +11,26 @@
 
     @include lg-min {
       gap: $gap-sm;
-      grid-template-areas:
-        "a1 a1 a2 a3"
-        "a4 a5 a5 a6"
-        "a7 a8 a9 a6";
+      grid-template-areas: "a1 a1 a2 a3"
+      "a4 a5 a5 a6"
+      "a7 a8 a9 a6";
     }
     @include lg-md {
       gap: $gap-sm;
-      grid-template-areas:
-        "a1 a1 a2"
-        "a3 a4 a4"
-        "a5 a5 a6"
-        "a7 a8 a6"
-        "a7 a9 a9";
+      grid-template-areas: "a1 a1 a2"
+      "a3 a4 a4"
+      "a5 a5 a6"
+      "a7 a8 a6"
+      "a7 a9 a9";
     }
     @include md-sm {
       gap: $gap-sm;
-      grid-template-areas:
-        "a1 a2"
-        "a3 a2"
-        "a4 a4"
-        "a5 a6"
-        "a5 a7"
-        "a8 a9";
+      grid-template-areas: "a1 a2"
+      "a3 a2"
+      "a4 a4"
+      "a5 a6"
+      "a5 a7"
+      "a8 a9";
     }
     @include sm {
       gap: $gap;
@@ -44,21 +41,21 @@
   &-actions {
     display: flex;
     justify-content: center;
+
     margin-top: $gap;
 
     @include lg-md {
       font-size: 1.125rem;
     }
-
     @include md-sm {
       font-size: 1.125rem;
     }
     @include sm {
       font-size: 1.125rem;
     }
-
     @include sm-min {
       margin-bottom: $gap-lg;
+
       font-size: 1.125rem;
     }
   }

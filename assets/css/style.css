@@ -1013,6 +1013,7 @@ a {
     list-style: none;
   }
   .header-navbar__link {
+    margin-left: 20px;
     padding: 20px 10px;
   }
   .skills-item__title {
