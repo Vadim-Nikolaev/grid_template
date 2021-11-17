@@ -521,7 +521,6 @@ a {
 }
 .header-navbar__link {
   display: block;
-  margin-left: 20px;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
@@ -566,6 +565,9 @@ a {
   position: relative;
   z-index: 1;
 }
+.header-content__title {
+  line-height: 1.2em;
+}
 .header-content__actions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,6 +576,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+  padding-top: 0;
 }
 .skills__container {
   display: grid;
@@ -986,6 +989,7 @@ a {
   }
   .skills-actions {
     margin-bottom: 30px;
+    font-size: 1.125rem;
   }
 }
 @media (min-height: 691px) {
@@ -1027,7 +1031,7 @@ a {
     height: 60px;
   }
   .header-content__title {
-    margin: 0 0 55px;
+    margin: 0 0 53px;
   }
   .skills__container {
     gap: 10px;
@@ -1093,6 +1097,9 @@ a {
     gap: 10px;
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
   }
+  .skills-actions {
+    font-size: 1.125rem;
+  }
   .about {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -1155,6 +1162,8 @@ a {
     position: absolute;
     top: 100%;
     right: 20px;
+    width: 145px;
+    text-align: end;
     display: none;
     background-color: rgba(68, 89, 110, 0.9);
     margin: 0;
@@ -1189,9 +1198,15 @@ a {
   }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
+  .header-content__actions a {
+    letter-spacing: 0.05em;
+  }
   .skills__container {
     gap: 10px;
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+  }
+  .skills-actions {
+    font-size: 1.125rem;
   }
   .about {
     padding-top: 60px;
@@ -1241,6 +1256,9 @@ a {
   .btn--primary {
     width: 100%;
   }
+  .header-content__actions a {
+    letter-spacing: 0.05em;
+  }
   .header-content__actions {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1256,6 +1274,9 @@ a {
   .skills__container {
     gap: 20px;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+  }
+  .skills-actions {
+    font-size: 1.125rem;
   }
   .about {
     padding-top: 60px;

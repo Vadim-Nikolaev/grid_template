@@ -7,8 +7,10 @@
   }
 
   &__title {
+    line-height: 1.2em;
+
     @include lg-min {
-      margin: 0 0 55px;
+      margin: 0 0 53px;
     }
     @include lg-md {
       margin: 0 0 43px;
@@ -21,8 +23,19 @@
   &__actions {
     display: flex;
     justify-content: center;
-
     gap: $gap;
+    padding-top: 0;
+
+    & a {
+      @include md-sm {
+        letter-spacing: 0.05em;
+      }
+
+      @include sm {
+        letter-spacing: 0.05em;
+      }
+    }
+
     @include sm {
       align-items: center;
       flex-direction: column;
