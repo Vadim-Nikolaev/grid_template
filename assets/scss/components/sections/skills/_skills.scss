@@ -44,8 +44,19 @@
 
     margin-top: $gap;
 
+    @include lg-md {
+      font-size: 1.125rem;
+    }
+    @include md-sm {
+      font-size: 1.125rem;
+    }
+    @include sm {
+      font-size: 1.125rem;
+    }
     @include sm-min {
       margin-bottom: $gap-lg;
+
+      font-size: 1.125rem;
     }
   }
 }

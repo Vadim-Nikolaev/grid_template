@@ -1,22 +1,20 @@
 .about {
   position: relative;
+
   background-color: $color-gray-light;
 
   @include lg-min {
     padding-top: $gap-x5;
     padding-bottom: $gap-x5;
   }
-
   @include lg-md {
     padding-top: $gap-x4;
     padding-bottom: $gap-x4;
   }
-
   @include md-sm {
     padding-top: $gap-x3;
     padding-bottom: $gap-x3;
   }
-
   @include sm {
     padding-top: $gap-x3;
     padding-bottom: $gap-x3;
@@ -24,91 +22,98 @@
 
   &__container {
     display: grid;
+
     @extend %container;
-
     @include lg-min {
-      grid-template-columns: 1fr 271px;
       gap: $gap-x5;
-    }
-
-    @include lg-md {
       grid-template-columns: 1fr 271px;
+    }
+    @include lg-md {
       gap: $gap-x2;
+      grid-template-columns: 1fr 271px;
     }
-
     @include md-sm {
+      gap: $gap;
       grid-template-columns: 1fr 236px;
-      gap: $gap;
     }
-
     @include sm {
-      grid-template-columns: 1fr;
       gap: $gap;
+      grid-template-columns: 1fr;
     }
   }
 
   &__title {
     margin-top: 0;
+
     letter-spacing: 0.1em;
-    line-height: 1.2em;
-    font-family: $font-header;
+
     color: $color-primary;
+
+    font-family: $font-header;
     font-weight: 700;
+    line-height: 1.2em;
 
     @include lg-min {
+      margin-bottom: 2.7rem;
+
       font-size: 2.5rem;
-      margin-bottom: 2.7rem;
     }
-
     @include lg-md {
-      font-size: 2rem;
       margin-bottom: 2.7rem;
-    }
 
+      font-size: 2rem;
+    }
     @include md-sm {
-      font-size: 1.5rem;
       margin-bottom: 2.25rem;
-    }
 
+      font-size: 1.5rem;
+    }
     @include sm {
-      text-align: center;
       margin-bottom: 2.25rem;
+
+      text-align: center;
     }
   }
 
   &__content {
-    color: $color-gray;
     position: relative;
+
+    color: $color-gray;
 
     @include lg-min {
       letter-spacing: 0.049em;
+
       font-size: 1.125rem;
     }
-
     @include lg-md {
-      font-size: 1rem;
       letter-spacing: 0.055em;
+
+      font-size: 1rem;
 
       & p:first-of-type {
         margin-top: -5px;
       }
     }
-
     @include md {
-      font-size: 1rem;
       letter-spacing: 0.055em;
+
+      font-size: 1rem;
       & p:first-of-type {
         margin-top: -5px;
       }
     }
 
     & p:first-of-type::after {
-      right: -50px;
       position: absolute;
+      right: -50px;
+
       width: 2px;
       height: 200px;
+
       content: "";
+
       background-color: rgba(99, 117, 136, 0.1);
+
       @include lg-min {
         top: 140px;
         right: -$gap * 2.5;
@@ -142,21 +147,18 @@
         height: 480px;
       }
     }
-
     @include lg-md {
       img {
         width: 267px;
         height: 480px;
       }
     }
-
     @include md-sm {
       img {
         width: 236px;
         height: 424px;
       }
     }
-
     @include sm {
       img {
         width: 267px;
