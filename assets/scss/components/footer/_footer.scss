@@ -14,14 +14,16 @@
 
     margin-bottom: $gap-x2;
     font-size: 2.25rem;
-    &:hover {
-      color: $color-accent;
-    }
 
     & a {
       padding: $gap-sm;
       line-height: 0.9;
       letter-spacing: 0.001em;
+      &:hover,
+      &:focus {
+        color: $color-accent;
+        transition: color 0.5s;
+      }
     }
 
     &::after {
