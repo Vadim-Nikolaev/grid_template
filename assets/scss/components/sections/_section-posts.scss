@@ -56,20 +56,23 @@
 
     gap: $gap;
     @include lg-min {
-      grid-template-areas: "p1 p1 p2 p3"
-      "p4 p5 p6 p6";
+      grid-template-areas:
+        "p1 p1 p2 p3"
+        "p4 p5 p6 p6";
       grid-template-columns: repeat(4, 1fr);
     }
     @include lg-md {
-      grid-template-areas: "p1 p1 p2"
-      "p3 p4 p4"
-      "p5 p5 p6";
+      grid-template-areas:
+        "p1 p1 p2"
+        "p3 p4 p4"
+        "p5 p5 p6";
       grid-template-columns: repeat(3, 1fr);
     }
     @include lg-sm {
-      grid-template-areas: "p1 p2"
-      "p3 p4"
-      "p5 p6";
+      grid-template-areas:
+        "p1 p2"
+        "p3 p4"
+        "p5 p6";
       grid-template-columns: repeat(2, 1fr);
     }
     @include sm {
@@ -91,6 +94,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    overflow: hidden;
 
     background-color: #2d3651;
     img {
@@ -129,7 +133,7 @@
     }
   }
 
-  &__item {
+  &-item {
     overflow: hidden;
 
     transition: background-color 0.5s;

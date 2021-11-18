@@ -35,7 +35,7 @@
       padding-left: 30px;
 
       letter-spacing: 0.15em;
-
+      color: $color-light;
       border-color: rgba(255, 255, 255, 0);
       border-bottom-color: rgba(255, 255, 255, 0.25);
       background-color: #38405a;
@@ -43,6 +43,12 @@
       font-family: "Roboto", sans-serif;
       font-size: 16px;
       font-size: 1.125rem;
+
+      &::placeholder {
+        transition: 0.5s;
+
+        color: $color-gray;
+      }
 
       &:hover,
       &:focus {
